@@ -1,12 +1,12 @@
 import './App.css'
-
-function App() {
+import {Main, TitleBar} from "./components/"
+export function App() {
 
   return (
     <>
-      
+ <TitleBar/> 
+ <Main/>
    </>
   )
 }
 
-export default App
