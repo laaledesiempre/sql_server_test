@@ -5,11 +5,12 @@ export const Main = () => {
   return (
     <>
     <main>
-    <section className='section_wrapper'><Create/></section>
+     <section className='section_wrapper'><Create/></section>
     
     <section className='section_wrapper'><Update/></section>
 
     <section className='section_wrapper'><Delete/></section>
+ 
     </main>
     </>
   )

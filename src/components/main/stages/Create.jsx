@@ -26,7 +26,7 @@ export const Create = () => {
       <input type='text' placeholder='Ej. Hombre volador' onChange={(e)=>{
         setDescription(e.target.value)
       }}/>
-      <button onClick={()=>{fetchData()}}>Guardar en la base de datos</button>
+      <button disabled={!name} onClick={()=>{fetchData()}}>Guardar en la base de datos</button>
     </article>
   )
 }
