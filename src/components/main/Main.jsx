@@ -1,5 +1,5 @@
 import React from 'react'
-import {Create, Update, Delete} from "../index.jsx"
+import {Create, Update, Delete, Search} from "../index.jsx"
 
 export const Main = () => {
   return (
@@ -12,6 +12,9 @@ export const Main = () => {
     <section className='section_wrapper'><Delete/></section>
  
     </main>
+    <aside>
+    <Search/> 
+    </aside>
     </>
   )
 }
