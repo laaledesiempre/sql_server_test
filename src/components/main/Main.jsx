@@ -2,6 +2,7 @@ import React from 'react'
 import {Create, Update, Delete, Search} from "../index.jsx"
 
 export const Main = () => {
+  
   return (
     <>
     <main>

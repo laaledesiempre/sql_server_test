@@ -12,7 +12,9 @@ export const Delete = () => {
         console.log(error)
       }
     )},[])
-  const deleteIdDb=()=>{ axios.delete('http://localhost:3001/delete/characters/id/'+deleteID).then(
+  const deleteIdDb=()=>{ let confirmation= confirm("De verdad desea eliminar el elemento "+ deleteID+ "?")
+    if (confirmation){
+    axios.delete('http://localhost:3001/delete/characters/id/'+deleteID).then(
     (response)=>{
       if (response.status==200){
         window.alert("deleted with success")
@@ -25,7 +27,7 @@ export const Delete = () => {
     }
   )
 
-  }
+  }}
 return (
     <article className='create-form-wrapper'>
   <label>Id of the element you want to delete</label>
@@ -34,7 +36,7 @@ return (
       {IDListDelete && IDListDelete.map((e)=>{ return <option key={e.ID} value={e.ID}>{e.ID}</option>
       })}
   </select>
-  <button onClick={()=>{deleteIdDb()}}>DELETE</button>
+  <button disabled={!deleteID} onClick={()=>{deleteIdDb()}}>DELETE</button>
     </article>
   )
 }

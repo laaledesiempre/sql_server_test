@@ -57,10 +57,11 @@ nav button{
   border-radius: 1rem;
 }
 main{
-  margin-left:-200vw;
+  margin-left:0vw;
   display: flex;
   width: 300vw;
   overflow: hidden;
+  transition: 500ms all ease-out;
 }
 .section_wrapper{
   width: 100vw;
