@@ -57,7 +57,7 @@ nav button{
   border-radius: 1rem;
 }
 main{
-  margin-left:0vw;
+  margin-left:-200vw;
   display: flex;
   width: 300vw;
   overflow: hidden;
@@ -96,4 +96,11 @@ aside{
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+select{
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
